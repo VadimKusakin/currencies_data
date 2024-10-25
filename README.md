@@ -11,6 +11,10 @@ git clone https://github.com/VadimKusakin/currencies_data.git
 
 cd currencies_data
 
+python -m venv venv
+
+source venv/bin/activate
+
 pip install -r requirements.txt
 
 echo -e "MYSQL_USER=login\nMYSQL_PASSWORD=pass\nMYSQL_HOST=localhost\nMYSQL_DATABASE=my_database" > .env
@@ -25,4 +29,6 @@ docker run -d \
     -e MYSQL_DATABASE=my_database \
     -p 3306:3306 \
     my_mysql_image
+
+python main.py
 ```
