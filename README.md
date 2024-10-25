@@ -11,6 +11,8 @@ git clone https://github.com/VadimKusakin/currencies_data.git
 
 cd Airflow_pipeline
 
+pip install -r requirements.txt
+
 echo -e "MYSQL_USER=login\nMYSQL_PASSWORD=pass\nMYSQL_HOST=localhost\nMYSQL_DATABASE=my_database" > .env
 
 docker build --build-arg MYSQL_USER=$MYSQL_USER --build-arg MYSQL_PASSWORD=$MYSQL_PASSWORD -t my_mysql_image .
