@@ -23,4 +23,6 @@ docker run -d \
     -e MYSQL_DATABASE=my_database \
     -p 3306:3306 \
     my_mysql_image
+
+source .env
 ```
