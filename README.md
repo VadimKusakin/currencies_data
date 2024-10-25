@@ -17,7 +17,7 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-echo -e "MYSQL_USER=login\nMYSQL_PASSWORD=pass\nMYSQL_HOST=localhost\nMYSQL_DATABASE=my_database" > .env
+echo -e "export MYSQL_USER=login\nexport MYSQL_PASSWORD=pass\nexport MYSQL_HOST=localhost\nexport MYSQL_DATABASE=my_database" > .env
 
 source .env
 
