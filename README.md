@@ -11,7 +11,7 @@ git clone https://github.com/VadimKusakin/currencies_data.git
 
 cd currencies_data
 
-python -m venv venv
+python3.10 -m venv venv
 
 source venv/bin/activate
 
