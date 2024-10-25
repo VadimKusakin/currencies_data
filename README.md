@@ -9,7 +9,7 @@
 ```bash
 git clone https://github.com/VadimKusakin/currencies_data.git
 
-cd Airflow_pipeline
+cd currencies_data
 
 pip install -r requirements.txt
 
