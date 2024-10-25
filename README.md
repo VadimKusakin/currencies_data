@@ -15,6 +15,8 @@ pip install -r requirements.txt
 
 echo -e "MYSQL_USER=login\nMYSQL_PASSWORD=pass\nMYSQL_HOST=localhost\nMYSQL_DATABASE=my_database" > .env
 
+source .env
+
 docker build --build-arg MYSQL_USER=$MYSQL_USER --build-arg MYSQL_PASSWORD=$MYSQL_PASSWORD -t my_mysql_image .
 
 docker run -d \
@@ -23,6 +25,4 @@ docker run -d \
     -e MYSQL_DATABASE=my_database \
     -p 3306:3306 \
     my_mysql_image
-
-source .env
 ```
