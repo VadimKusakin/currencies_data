@@ -30,5 +30,5 @@ docker run -d \
     -p 3306:3306 \
     my_mysql_image
 
-python main.py
+python3.10 main.py
 ```
